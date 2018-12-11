@@ -4,4 +4,7 @@
     <string name="AUTH_KEY">RRAfh7fukrCLTKN</string>
     <string name="AUTH_SECRET">Jsuj22CkeTwsjxM</string>
     <string name="ACCOUNT_KEY">VRNQis1G-V_T_Bp7_Cdy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

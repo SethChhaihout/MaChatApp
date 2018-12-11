@@ -24,15 +24,15 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        setSupportActionBar(mainToolbar)
+        //setSupportActionBar(mainToolbar)
         progressBar.visibility = View.GONE
         initializeFramework()
 
-        val actionBar = supportActionBar
-        if (actionBar != null) {
-            actionBar.title = "MaChat"
-        }
-        actionBar?.setDisplayHomeAsUpEnabled(true)
+//        val actionBar = supportActionBar
+//        if (actionBar != null) {
+//            actionBar.title = "MaChat"
+//        }
+        //actionBar?.setDisplayHomeAsUpEnabled(true)
 
         registerSession()
 
