@@ -1,8 +1,9 @@
-package com.example.chhaihout.machatapp
+package com.example.chhaihout.machatapp.Activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.chhaihout.machatapp.R
 import kotlinx.android.synthetic.main.activity_start_up.*
 
 class StartUpActivity : AppCompatActivity() {
@@ -13,13 +14,13 @@ class StartUpActivity : AppCompatActivity() {
 
         //Button SignIn
         btnSignIn.setOnClickListener{
-            var intent = Intent(this,SignInActivity::class.java)
+            var intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
 
         //Button Register
         btnRegister.setOnClickListener{
-            var intent = Intent(this,RegisterActivity::class.java)
+            var intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

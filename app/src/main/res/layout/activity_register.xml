@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.chhaihout.machatapp.RegisterActivity"
+    tools:context="com.example.chhaihout.machatapp.Activity.RegisterActivity"
     android:background="@drawable/background">
     <!--<android.support.v7.widget.Toolbar-->
         <!--android:id="@+id/mainToolbar"-->

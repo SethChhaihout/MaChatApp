@@ -1,9 +1,10 @@
-package com.example.chhaihout.machatapp
+package com.example.chhaihout.machatapp.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.example.chhaihout.machatapp.R
 import com.quickblox.auth.QBAuth
 import com.quickblox.auth.session.QBSession
 import com.quickblox.auth.session.QBSettings

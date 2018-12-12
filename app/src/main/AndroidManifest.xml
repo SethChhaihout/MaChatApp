@@ -3,6 +3,8 @@
     package="com.example.chhaihout.machatapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -12,23 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/HaveToolBar">
         <activity
-            android:name=".StartUpActivity"
+            android:name=".Activity.StartUpActivity"
             android:theme="@style/AppTheme">
-
-        </activity>
-        <activity
-            android:name=".SignInActivity"
-            android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".RegisterActivity"
-            android:parentActivityName=".StartUpActivity"></activity>
-        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:parentActivityName=".Activity.StartUpActivity" />
+        <activity android:name=".Activity.HomeActivity">
+
+        </activity>
+        <activity android:name=".Activity.AccountSettingActivity"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,10 @@
-package com.example.chhaihout.machatapp
+package com.example.chhaihout.machatapp.Activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.chhaihout.machatapp.R
 import com.quickblox.auth.session.QBSettings
 import com.quickblox.core.QBEntityCallback
 import com.quickblox.core.exception.QBResponseException
@@ -39,12 +40,15 @@ class SignInActivity : AppCompatActivity() {
                 override fun onSuccess(p0: QBUser?, p1: Bundle?) {
                     signInprogressBar.visibility = View.GONE
                     toast("SignIn Successfully").show()
+                    val intent = Intent(applicationContext, HomeActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
             })
         }
 
         relativel.setOnClickListener {
-            loginWithFacebook();
+            loginWithFacebook()
         }
     }
 
@@ -54,7 +58,7 @@ class SignInActivity : AppCompatActivity() {
 
     private fun initializeFramework() {
         val qbSetting = QBSettings.getInstance()
-        qbSetting.init(applicationContext, R.string.APP_ID.toString(),R.string.AUTH_KEY.toString(),R.string.AUTH_SECRET.toString())
+        qbSetting.init(applicationContext, R.string.APP_ID.toString(), R.string.AUTH_KEY.toString(), R.string.AUTH_SECRET.toString())
         QBSettings.getInstance().accountKey = R.string.ACCOUNT_KEY.toString()
     }
 }
